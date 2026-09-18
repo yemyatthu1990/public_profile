@@ -1,0 +1,116 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --line: #e5e7eb;
+  --code-bg: #f6f8fa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1115;
+    --fg: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #60a5fa;
+    --line: #262b33;
+    --code-bg: #161b22;
+  }
+}
+
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
+main { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem 4rem; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header { border-bottom: 1px solid var(--line); }
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 1.1rem; padding-bottom: 1.1rem;
+}
+.brand { font-weight: 700; color: var(--fg); letter-spacing: -0.01em; }
+.brand:hover { text-decoration: none; }
+.site-header nav { display: flex; gap: 1.25rem; }
+.site-header nav a { color: var(--muted); font-size: 0.95rem; }
+.site-header nav a:hover { color: var(--fg); text-decoration: none; }
+
+.hero { padding: 3.5rem 0 2.5rem; }
+.hero h1 { font-size: 2.2rem; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+.tagline { font-size: 1.15rem; color: var(--accent); margin: 0 0 0.75rem; font-weight: 500; }
+.bio { color: var(--muted); margin: 0; max-width: 38rem; }
+
+section { padding: 1.5rem 0; }
+section > h2 {
+  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--muted); margin: 0 0 1rem; font-weight: 600;
+}
+
+.entry {
+  display: grid; grid-template-columns: 9rem 1fr; gap: 1rem;
+  padding: 0.9rem 0; border-top: 1px solid var(--line);
+}
+.entry:first-of-type { border-top: none; }
+.entry-meta { color: var(--muted); font-size: 0.88rem; padding-top: 0.2rem; }
+.entry-body h3 { margin: 0 0 0.25rem; font-size: 1.02rem; }
+.entry-body h3 .at { color: var(--muted); font-weight: 400; }
+.entry-body p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+.post-row {
+  display: flex; gap: 1rem; padding: 0.45rem 0; align-items: baseline;
+}
+.post-row time { color: var(--muted); font-size: 0.88rem; min-width: 6.5rem; }
+.more { margin-top: 1rem; }
+
+.post-list .post-item { padding: 1.1rem 0; border-top: 1px solid var(--line); }
+.post-list .post-item:first-of-type { border-top: none; }
+.post-item time { color: var(--muted); font-size: 0.88rem; }
+.post-item h2 { margin: 0.15rem 0 0.3rem; font-size: 1.2rem; }
+.post-item h2 a { color: var(--fg); }
+.post-item h2 a:hover { color: var(--accent); text-decoration: none; }
+.post-item p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+.post h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 2.5rem 0 0.3rem; }
+.post-date { color: var(--muted); font-size: 0.9rem; }
+.post-content { margin-top: 1.5rem; }
+.post-content h2 { font-size: 1.35rem; margin-top: 2.2rem; letter-spacing: -0.01em; }
+.post-content h3 { font-size: 1.15rem; margin-top: 1.8rem; }
+.post-content img { max-width: 100%; }
+.post-content pre {
+  background: var(--code-bg); padding: 1rem; border-radius: 8px;
+  overflow-x: auto; font-size: 0.88rem; line-height: 1.55;
+}
+.post-content code {
+  background: var(--code-bg); padding: 0.15rem 0.4rem; border-radius: 4px;
+  font-size: 0.88em;
+}
+.post-content pre code { background: none; padding: 0; }
+.post-content blockquote {
+  border-left: 3px solid var(--line); margin: 1.2rem 0; padding: 0.2rem 1.2rem;
+  color: var(--muted);
+}
+.tags { margin-top: 2rem; }
+.tags a { color: var(--muted); margin-right: 0.6rem; }
+.tags a:hover { color: var(--accent); }
+
+.site-footer { border-top: 1px solid var(--line); padding: 1.5rem 0 2.5rem; }
+.site-footer .wrap {
+  display: flex; justify-content: space-between; color: var(--muted); font-size: 0.88rem;
+}
+.footer-links a { color: var(--muted); margin-left: 1rem; }
+.footer-links a:hover { color: var(--fg); text-decoration: none; }
+
+@media (max-width: 600px) {
+  .entry { grid-template-columns: 1fr; gap: 0.2rem; }
+  .post-row { flex-direction: column; gap: 0.1rem; }
+  .hero h1 { font-size: 1.8rem; }
+}

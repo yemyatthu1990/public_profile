@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© {{ now.Year }} {{ .Site.Params.firstName }} {{ .Site.Params.lastName }}</span>
+    <span class="footer-links">
+      {{ range .Site.Params.social }}
+      <a href="{{ .url }}">{{ .name }}</a>
+      {{ end }}
+    </span>
+  </div>
+</footer>

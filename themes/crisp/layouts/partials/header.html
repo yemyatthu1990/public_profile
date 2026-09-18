@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ "/" | relURL }}">{{ .Site.Params.firstName }} {{ .Site.Params.lastName }}</a>
+    <nav>
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

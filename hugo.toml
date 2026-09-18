@@ -1,36 +1,50 @@
 baseURL = 'https://yemyatthu1990.github.io/public_profile/'
 locale = 'en-us'
 title = 'Your Name'
-theme = 'PaperMod'
+theme = 'crisp'
 enableRobotsTXT = true
-
-[pagination]
-pagerSize = 5
 
 [params]
 description = 'Personal website and blog of Your Name'
-author = 'Your Name'
-ShowReadingTime = true
-ShowShareButtons = false
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = true
-ShowWordCount = true
-ShowRssButtonInSectionTermList = true
-ShowToc = true
-mainSections = ['posts']
+firstName = 'Your'
+lastName = 'Name'
+tagline = 'Software Engineer at Company Name'
+bio = 'I build reliable software and write about what I learn along the way. Currently focused on backend systems and developer tooling.'
 
-[params.profileMode]
-enabled = true
-title = 'Your Name'
-subtitle = 'Software Engineer at Company Name. I build things for the web and write about what I learn.'
-# imageUrl = 'img/me.png'
-buttons = [
-  { name = 'Blog', url = '/posts/' },
-  { name = 'About', url = '/about/' },
-  { name = 'GitHub', url = 'https://github.com/yourusername' },
-  { name = 'LinkedIn', url = 'https://linkedin.com/in/yourusername' },
-]
+[[params.experience]]
+company = 'Company Name'
+role = 'Senior Software Engineer'
+period = '2023 — Present'
+description = 'Leading development of core platform services. Mentoring engineers and driving technical decisions.'
+
+[[params.experience]]
+company = 'Previous Company'
+role = 'Software Engineer'
+period = '2020 — 2023'
+description = 'Built and maintained user-facing features across the product. Worked with Python, Go, and PostgreSQL.'
+
+[[params.experience]]
+company = 'First Company'
+role = 'Junior Developer'
+period = '2018 — 2020'
+description = 'Started my career building web applications and learning the craft.'
+
+[[params.education]]
+degree = 'B.Sc. in Computer Science'
+school = 'Your University'
+period = '2014 — 2018'
+
+[[params.social]]
+name = 'GitHub'
+url = 'https://github.com/yourusername'
+
+[[params.social]]
+name = 'LinkedIn'
+url = 'https://linkedin.com/in/yourusername'
+
+[[params.social]]
+name = 'Email'
+url = 'mailto:you@example.com'
 
 [menu]
 [[menu.main]]
@@ -45,18 +59,8 @@ name = 'About'
 url = '/about/'
 weight = 2
 
-[[menu.main]]
-identifier = 'search'
-name = 'Search'
-url = '/search/'
-weight = 3
-
-[outputs]
-home = ['html', 'rss', 'json']
-
 [taxonomies]
 tag = 'tags'
-category = 'categories'
 
 [markup.highlight]
 noClasses = false

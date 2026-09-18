@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="post">
+  <h1>{{ .Title }}</h1>
+  {{ if not .Date.IsZero }}<time class="post-date">{{ .Date.Format "January 2, 2006" }}</time>{{ end }}
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+  {{ with .Params.tags }}
+  <p class="tags">{{ range . }}<a href="{{ "/tags/" | relURL }}{{ . }}">#{{ . }}</a> {{ end }}</p>
+  {{ end }}
+</article>
+{{ end }}

@@ -1,0 +1,44 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ .Site.Params.firstName }} {{ .Site.Params.lastName }}</h1>
+  <p class="tagline">{{ .Site.Params.tagline }}</p>
+  <p class="bio">{{ .Site.Params.bio }}</p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  {{ range .Site.Params.experience }}
+  <div class="entry">
+    <div class="entry-meta">{{ .period }}</div>
+    <div class="entry-body">
+      <h3>{{ .role }} <span class="at">· {{ .company }}</span></h3>
+      <p>{{ .description }}</p>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<section>
+  <h2>Education</h2>
+  {{ range .Site.Params.education }}
+  <div class="entry">
+    <div class="entry-meta">{{ .period }}</div>
+    <div class="entry-body">
+      <h3>{{ .degree }}</h3>
+      <p>{{ .school }}</p>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<section>
+  <h2>Recent posts</h2>
+  {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+  <div class="post-row">
+    <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </div>
+  {{ end }}
+  <p class="more"><a href="{{ "/posts/" | relURL }}">All posts →</a></p>
+</section>
+{{ end }}
