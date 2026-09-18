@@ -6,7 +6,7 @@
     {{ .Content }}
   </div>
   {{ with .Params.tags }}
-  <p class="tags">{{ range . }}<a href="{{ "/tags/" | relURL }}{{ . }}">#{{ . }}</a> {{ end }}</p>
+  <p class="tags">{{ range . }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a> {{ end }}</p>
   {{ end }}
 </article>
 {{ end }}
