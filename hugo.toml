@@ -1,0 +1,66 @@
+baseURL = 'https://yemyatthu1990.github.io/public_profile/'
+locale = 'en-us'
+title = 'Your Name'
+theme = 'PaperMod'
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 5
+
+[params]
+description = 'Personal website and blog of Your Name'
+author = 'Your Name'
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+ShowToc = true
+mainSections = ['posts']
+
+[params.profileMode]
+enabled = true
+title = 'Your Name'
+subtitle = 'Software Engineer at Company Name. I build things for the web and write about what I learn.'
+# imageUrl = 'img/me.png'
+buttons = [
+  { name = 'Blog', url = '/posts/' },
+  { name = 'About', url = '/about/' },
+  { name = 'GitHub', url = 'https://github.com/yourusername' },
+  { name = 'LinkedIn', url = 'https://linkedin.com/in/yourusername' },
+]
+
+[menu]
+[[menu.main]]
+identifier = 'posts'
+name = 'Blog'
+url = '/posts/'
+weight = 1
+
+[[menu.main]]
+identifier = 'about'
+name = 'About'
+url = '/about/'
+weight = 2
+
+[[menu.main]]
+identifier = 'search'
+name = 'Search'
+url = '/search/'
+weight = 3
+
+[outputs]
+home = ['html', 'rss', 'json']
+
+[taxonomies]
+tag = 'tags'
+category = 'categories'
+
+[markup.highlight]
+noClasses = false
+codeFences = true
+
+[markup.goldmark.renderer]
+unsafe = true
