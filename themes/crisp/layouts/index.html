@@ -11,7 +11,7 @@
   <div class="entry">
     <div class="entry-meta">{{ .period }}</div>
     <div class="entry-body">
-      <h3>{{ .role }} <span class="at">· {{ .company }}</span></h3>
+      <h3>{{ .role }} <span class="at">· {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .company }}</a>{{ else }}{{ .company }}{{ end }}</span></h3>
       {{ with .description }}<p>{{ . }}</p>{{ end }}
     </div>
   </div>

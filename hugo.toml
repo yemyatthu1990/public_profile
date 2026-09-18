@@ -8,32 +8,37 @@ enableRobotsTXT = true
 description = 'Personal website and blog of Ye Myat Thu'
 firstName = 'Ye Myat'
 lastName = 'Thu'
-tagline = 'Founding Mobile Engineer at Alemdia'
+tagline = 'Founding Mobile Engineer at Almedia'
 bio = "I'm a product-focused engineer with interests in mobile, security, and AI. I love experimenting with new things — recently I've picked up 3D printing, and I'm now building a habit of writing regularly."
 
 [[params.experience]]
-company = 'Alemdia'
+company = 'Almedia'
+url = 'https://almedia.co'
 role = 'Founding Mobile Engineer'
 period = '2026 — Present'
 description = 'Building a rewarded advertising SDK from the ground up, with a mission to revolutionalize how mobile advertising works.'
 
 [[params.experience]]
 company = 'Adjoe'
+url = 'https://www.adjoe.io'
 role = 'Senior Android Developer'
 period = '2025 — 2026'
 
 [[params.experience]]
 company = 'OKX'
+url = 'https://www.okx.com'
 role = 'Staff Mobile Engineer'
 period = '2024 — 2025'
 
 [[params.experience]]
-company = 'Shield'
+company = 'SHIELD'
+url = 'https://shield.com'
 role = 'Mobile Lead'
 period = '2020 — 2024'
 
 [[params.experience]]
 company = '99.co'
+url = 'https://www.99.co'
 role = 'Android Developer'
 period = '2018 — 2020'
 
