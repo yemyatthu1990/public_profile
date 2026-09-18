@@ -1,50 +1,57 @@
 baseURL = 'https://yemyatthu1990.github.io/public_profile/'
 locale = 'en-us'
-title = 'Your Name'
+title = 'Ye Myat Thu'
 theme = 'crisp'
 enableRobotsTXT = true
 
 [params]
-description = 'Personal website and blog of Your Name'
-firstName = 'Your'
-lastName = 'Name'
-tagline = 'Software Engineer at Company Name'
-bio = 'I build reliable software and write about what I learn along the way. Currently focused on backend systems and developer tooling.'
+description = 'Personal website and blog of Ye Myat Thu'
+firstName = 'Ye Myat'
+lastName = 'Thu'
+tagline = 'Founding Mobile Engineer at Alemdia'
+bio = "I'm a product-focused engineer with interests in mobile, security, and AI. I love experimenting with new things — recently I've picked up 3D printing, and I'm now building a habit of writing regularly."
 
 [[params.experience]]
-company = 'Company Name'
-role = 'Senior Software Engineer'
-period = '2023 — Present'
-description = 'Leading development of core platform services. Mentoring engineers and driving technical decisions.'
+company = 'Alemdia'
+role = 'Founding Mobile Engineer'
+period = '2026 — Present'
+description = 'Building a rewarded advertising SDK from the ground up, with a mission to revolutionalize how mobile advertising works.'
 
 [[params.experience]]
-company = 'Previous Company'
-role = 'Software Engineer'
-period = '2020 — 2023'
-description = 'Built and maintained user-facing features across the product. Worked with Python, Go, and PostgreSQL.'
+company = 'Adjoe'
+role = 'Senior Android Developer'
+period = '2025 — 2026'
 
 [[params.experience]]
-company = 'First Company'
-role = 'Junior Developer'
+company = 'OKX'
+role = 'Staff Mobile Engineer'
+period = '2024 — 2025'
+
+[[params.experience]]
+company = 'Shield'
+role = 'Mobile Lead'
+period = '2020 — 2024'
+
+[[params.experience]]
+company = '99.co'
+role = 'Android Developer'
 period = '2018 — 2020'
-description = 'Started my career building web applications and learning the craft.'
 
 [[params.education]]
-degree = 'B.Sc. in Computer Science'
-school = 'Your University'
-period = '2014 — 2018'
+degree = 'MSc Computer Science'
+school = 'University of East London'
 
 [[params.social]]
 name = 'GitHub'
-url = 'https://github.com/yourusername'
+url = 'https://github.com/yemyatthu1990'
 
 [[params.social]]
 name = 'LinkedIn'
-url = 'https://linkedin.com/in/yourusername'
+url = 'https://www.linkedin.com/in/yemyat/'
 
 [[params.social]]
 name = 'Email'
-url = 'mailto:you@example.com'
+url = 'mailto:thu.yemyat@gmail.com'
 
 [menu]
 [[menu.main]]

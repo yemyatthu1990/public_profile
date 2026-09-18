@@ -12,7 +12,7 @@
     <div class="entry-meta">{{ .period }}</div>
     <div class="entry-body">
       <h3>{{ .role }} <span class="at">· {{ .company }}</span></h3>
-      <p>{{ .description }}</p>
+      {{ with .description }}<p>{{ . }}</p>{{ end }}
     </div>
   </div>
   {{ end }}
